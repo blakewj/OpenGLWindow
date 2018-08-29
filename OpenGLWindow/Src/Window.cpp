@@ -18,7 +18,7 @@ static int createShader(const std::string& vertexShader, const std::string& frag
 
 	unsigned int program = glCreateProgram();
 	unsigned int vs = compileShader(GL_VERTEX_SHADER, vertexShader);
-	unsigned int fs = compileShader(GL_FRAGMENT_SHADER, fragmentShader);
+	unsigned int fs = compileShader(GL_FRAGMENT_SHADER, fragmentShader); 
 	//we have our two files and we are going to attach them to a program
 
 	glAttachShader(program, vs);
